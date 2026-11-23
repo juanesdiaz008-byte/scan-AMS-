@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090e0c">
+<meta name="description" content="DAKOTA Tournament Security: portal de integridad competitiva para torneos de Roblox.">
+<title>DAKOTA | Tournament Security</title>
+<style>
+:root{color-scheme:dark;--bg:#080d0b;--panel:#101915;--panel2:#14221b;--line:#263a30;--text:#edf6f0;--muted:#94a99c;--green:#a4ffc1;--lime:#4fe28a;--amber:#ffd27d}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 78% 0%,#163b2a66,transparent 36%),var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,Segoe UI,Arial}
+.wrap{max-width:1120px;margin:auto;padding:26px 22px 60px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:20px}.brand{display:flex;align-items:center;gap:12px}.mark{width:46px;height:46px;border:1px solid #4b9366;border-radius:13px;display:grid;place-items:center;color:var(--green);font-weight:900;font-size:23px;box-shadow:0 0 25px #4fe28a22}h1{font-size:19px;letter-spacing:3px;margin:0}.tag{font-size:10px;letter-spacing:2px;color:var(--muted)}.badge{font-size:10px;letter-spacing:1px;border:1px solid #326d4b;color:var(--green);border-radius:99px;padding:7px 10px}
+.hero{padding:48px 0 25px}.eyebrow{color:var(--green);font-size:11px;font-weight:800;letter-spacing:2px}.hero h2{font-size:clamp(32px,5vw,52px);line-height:1.04;letter-spacing:-1.5px;max-width:720px;margin:12px 0}.hero p{max-width:680px;color:var(--muted);margin:0}
+.tabs{display:flex;gap:8px;margin:22px 0 15px}.tab{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:9px;padding:10px 15px;cursor:pointer}.tab.active{background:#193527;border-color:#4b9366;color:var(--green)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{font-size:16px;margin:0 0 5px}.muted{color:var(--muted);font-size:13px;margin:0 0 17px}
+label{display:block;color:#c0d1c6;font-size:11px;letter-spacing:1px;margin:13px 0 6px}input{width:100%;background:#090f0c;border:1px solid #344a3d;border-radius:9px;padding:12px;color:var(--text);font:inherit;outline:none}input:focus{border-color:var(--lime)}
+.consent{display:flex;align-items:flex-start;gap:9px;color:var(--muted);font-size:12px;margin-top:14px}.consent input{width:auto;margin-top:4px}
+.btn{border:0;background:var(--green);color:#07130b;font-weight:800;border-radius:9px;padding:12px 17px;margin-top:16px;cursor:pointer}.btn.alt{background:#1a2c22;color:var(--green);border:1px solid #3b6249}.btn:disabled{opacity:.45;cursor:not-allowed}
+.info{padding:13px 14px;border:1px solid var(--line);background:#0b130f;border-radius:10px;margin-top:11px}.info b{display:block;margin-bottom:3px}.info span{color:var(--muted);font-size:12px}
+.notice{border-left:3px solid var(--amber);background:#211d13;color:#d4c49e;padding:12px 14px;border-radius:5px;font-size:12px;margin-top:15px}
+.hidden{display:none}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-bottom:15px}.metric{border:1px solid var(--line);background:#0b130f;border-radius:12px;padding:14px}.metric strong{display:block;font-size:24px}.metric small{color:var(--muted);font-size:10px;letter-spacing:1px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--line)}th{font-size:10px;color:var(--muted);letter-spacing:1px}.green{color:var(--green)}.yellow{color:var(--amber)}
+footer{text-align:center;color:#71877a;font-size:11px;margin-top:28px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.top{align-items:flex-start;gap:10px}.badge{white-space:nowrap}.hero{padding-top:36px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="top"><div class="brand"><div class="mark">D</div><div><h1>DAKOTA</h1><div class="tag">TOURNAMENT SECURITY</div></div></div><span class="badge">● PORTAL OFICIAL</span></header>
+<section class="hero"><div class="eyebrow">COMPETITIVE INTEGRITY</div><h2>El juego limpio empieza antes del primer duelo.</h2><p>Portal de registro y supervisión para torneos. DAKOTA está diseñado para ayudar a organizadores y jugadores a documentar revisiones con transparencia.</p></section>
+<nav class="tabs" aria-label="Secciones"><button class="tab active" data-tab="player">Participante</button><button class="tab" data-tab="admin">Vista organizador</button></nav>
+<section id="player" class="grid">
+<div class="card"><h3>Registro de participante</h3><p class="muted">Ingresa los datos entregados por la organización.</p>
+<label for="username">USUARIO DE ROBLOX</label><input id="username" maxlength="24" autocomplete="off" placeholder="Tu usuario de Roblox">
+<label for="tcode">CÓDIGO DEL TORNEO</label><input id="tcode" maxlength="32" autocomplete="off" placeholder="Código proporcionado por el organizador">
+<label class="consent"><input id="agree" type="checkbox"><span>Confirmo que deseo participar en el proceso de verificación y he leído que cualquier alerta requiere revisión humana. No autorizo acceso remoto ni recopilación de contraseñas, cookies o mensajes privados.</span></label>
+<button class="btn" id="register">Continuar</button><div id="result" class="info hidden" role="status"></div>
+</div>
+<div class="card"><h3>Proceso de revisión</h3><p class="muted">Así se organiza la verificación de cada jugador.</p>
+<div class="info"><b>01 · Identidad</b><span>Registro del nombre de Roblox y código del torneo.</span></div>
+<div class="info"><b>02 · Supervisión en vivo</b><span>El organizador puede solicitar compartir pantalla durante el duelo.</span></div>
+<div class="info"><b>03 · Revisión técnica autorizada</b><span>Una futura versión podrá incorporar un cliente auxiliar firmado, limitado y transparente.</span></div>
+<div class="info"><b>04 · Decisión del organizador</b><span>Las alertas se revisan junto con evidencias. Ningún indicador aislado demuestra uso de trampas.</span></div>
+<div class="notice">Esta versión es el portal inicial. Todavía no inspecciona Windows, no detecta executors y no envía registros a una base de datos.</div>
+</div></section>
+<section id="admin" class="hidden">
+<div class="metrics"><div class="metric"><strong id="total">0</strong><small>REGISTROS EN ESTA SESIÓN</small></div><div class="metric"><strong class="yellow">Manual</strong><small>REVISIÓN DE ALERTAS</small></div><div class="metric"><strong class="green">Activo</strong><small>PORTAL WEB</small></div></div>
+<div class="card"><h3>Registros de esta sesión</h3><p class="muted">Vista local de demostración. Los datos desaparecen al recargar la página.</p>
+<div style="overflow-x:auto"><table><thead><tr><th>JUGADOR</th><th>CÓDIGO</th><th>ESTADO</th></tr></thead><tbody id="records"><tr><td colspan="3" style="color:#94a99c">Todavía no hay participantes registrados en esta sesión.</td></tr></tbody></table></div>
+<div class="notice">El panel todavía no tiene autenticación ni backend. No compartas este enlace como si fuera un panel administrativo seguro.</div></div>
+</section>
+<footer>DAKOTA · Tournament Security · Versión inicial · Sin inspección del dispositivo en esta versión.</footer>
+</main>
+<script>
+const records=[];
+document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.getElementById('player').classList.toggle('hidden',btn.dataset.tab!=='player');document.getElementById('admin').classList.toggle('hidden',btn.dataset.tab!=='admin')}));
+document.getElementById('register').addEventListener('click',()=>{const user=document.getElementById('username').value.trim(),code=document.getElementById('tcode').value.trim(),agree=document.getElementById('agree').checked,result=document.getElementById('result');result.classList.remove('hidden');if(!user||!code||!agree){result.innerHTML='<b class="yellow">Faltan datos</b><span>Completa el usuario, el código y la autorización para continuar.</span>';return}if(records.some(r=>r.user.toLowerCase()===user.toLowerCase())){result.innerHTML='<b class="yellow">Usuario ya registrado</b><span>Este usuario ya aparece en esta sesión de demostración.</span>';return}records.push({user,code});document.getElementById('total').textContent=records.length;const body=document.getElementById('records');if(records.length===1)body.innerHTML='';const row=document.createElement('tr');for(const value of [user,code,'Pendiente de revisión']){const cell=document.createElement('td');cell.textContent=value;if(value==='Pendiente de revisión')cell.className='yellow';row.appendChild(cell)}body.appendChild(row);result.innerHTML='<b class="green">Registro local completado</b><span>Tu registro se añadió a esta demostración. Aún no se ha enviado a un servidor ni se ha analizado tu equipo.</span>'});
+</script></body></html>
