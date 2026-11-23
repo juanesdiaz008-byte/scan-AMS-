@@ -7,15 +7,15 @@
   <meta name="description" content="Portal transparente de registro y revisión manual para torneos de Roblox.">
   <title>DAKOTA | Revisión de torneo</title>
   <style>
-    :root{color-scheme:dark;--bg:#080d0b;--panel:#101915;--panel2:#14221b;--line:#263a30;--text:#edf6f0;--muted:#94a99c;--green:#a4ffc1;--amber:#ffd27d}
-    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 78% 0%,#163b2a66,transparent 36%),var(--bg);color:var(--text);font:15px/1.55 system-ui,Segoe UI,Arial,sans-serif}.wrap{max-width:1000px;margin:auto;padding:26px 20px 56px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{font-weight:900;letter-spacing:2px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.5px}.badge{color:var(--green);font-size:11px}.hero{padding:38px 0 20px}.eyebrow{color:var(--green);font-size:11px;font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:10px 0}.muted{color:var(--muted)}.tabs{display:flex;gap:8px;margin:18px 0}.tab,.btn{border:1px solid var(--line);border-radius:9px;padding:10px 14px;cursor:pointer;font:inherit}.tab{background:transparent;color:var(--muted)}.tab.active{background:#193326;color:var(--green);border-color:#315c42}.btn{background:var(--green);color:#07130b;font-weight:800;margin-top:14px}.btn.secondary{background:#1a2c22;color:var(--green);margin-left:7px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:15px;padding:20px}.card h2{font-size:19px;margin:0 0 4px}label{display:block;color:#c0d1c6;font-size:11px;letter-spacing:.7px;margin:13px 0 6px}input,select,textarea{width:100%;background:#090f0c;border:1px solid #344a3d;border-radius:8px;padding:11px;color:var(--text);font:inherit}textarea{min-height:90px;resize:vertical}.consent{display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:12px}.consent input{width:auto;margin-top:4px}.notice,.status{padding:12px 14px;border-radius:8px;margin-top:13px;font-size:12px}.notice{border-left:3px solid var(--amber);background:#211d13;color:#e0d0a8}.status{border:1px solid var(--line);background:#0b130f}.hidden{display:none!important}.metrics{display:flex;gap:12px;margin:0 0 14px}.metric{background:#0b130f;border:1px solid var(--line);border-radius:10px;padding:12px;min-width:150px}.metric strong{display:block;font-size:22px}.metric small{color:var(--muted);font-size:10px;letter-spacing:.8px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;color:var(--muted);letter-spacing:.8px}.table-wrap{overflow-x:auto}.empty{color:var(--muted)}footer{text-align:center;color:#71877a;font-size:11px;margin-top:25px}a{color:var(--green)}
+    :root{color-scheme:dark;--bg:#080d0b;--panel:#101915;--panel2:#14221b;--line:#263a30;--text:#edf6f0;--muted:#94a99c;--green:#a4ffc1;--amber:#ffd27d;--red:#ff9d91}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 78% 0%,#163b2a66,transparent 36%),var(--bg);color:var(--text);font:15px/1.55 system-ui,Segoe UI,Arial,sans-serif}.wrap{max-width:1000px;margin:auto;padding:26px 20px 56px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{font-weight:900;letter-spacing:2px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.5px}.badge{color:var(--green);font-size:11px}.hero{padding:38px 0 20px}.eyebrow{color:var(--green);font-size:11px;font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:10px 0}.muted{color:var(--muted)}.tabs{display:flex;gap:8px;margin:18px 0}.tab,.btn{border:1px solid var(--line);border-radius:9px;padding:10px 14px;cursor:pointer;font:inherit}.tab{background:transparent;color:var(--muted)}.tab.active{background:#193326;color:var(--green);border-color:#315c42}.btn{background:var(--green);color:#07130b;font-weight:800;margin-top:14px}.btn.secondary{background:#1a2c22;color:var(--green)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:15px;padding:20px}.card h2{font-size:19px;margin:0 0 4px}label{display:block;color:#c0d1c6;font-size:11px;letter-spacing:.7px;margin:13px 0 6px}input,select,textarea{width:100%;background:#090f0c;border:1px solid #344a3d;border-radius:8px;padding:11px;color:var(--text);font:inherit}textarea{min-height:90px;resize:vertical}.consent{display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:12px}.consent input{width:auto;margin-top:4px}.notice,.status{padding:12px 14px;border-radius:8px;margin-top:13px;font-size:12px}.notice{border-left:3px solid var(--amber);background:#211d13;color:#e0d0a8}.status{border:1px solid var(--line);background:#0b130f}.status.error{border-color:#75453e;color:var(--red)}.hidden{display:none!important}.metrics{display:flex;gap:12px;margin:0 0 14px}.metric{background:#0b130f;border:1px solid var(--line);border-radius:10px;padding:12px;min-width:150px}.metric strong{display:block;font-size:22px}.metric small{color:var(--muted);font-size:10px;letter-spacing:.8px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:10px;color:var(--muted);letter-spacing:.8px}.table-wrap{overflow-x:auto}.empty{color:var(--muted)}footer{text-align:center;color:#71877a;font-size:11px;margin-top:25px}a{color:var(--green)}.row-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     @media(max-width:700px){.grid{grid-template-columns:1fr}.top{align-items:flex-start;gap:10px}.metrics{flex-wrap:wrap}.wrap{padding:20px 15px 40px}}
   </style>
 </head>
 <body>
   <main class="wrap">
     <header class="top"><div class="brand">DAKOTA<small>TOURNAMENT INTEGRITY</small></div><span class="badge">● REVISIÓN TRANSPARENTE</span></header>
-    <section class="hero"><div class="eyebrow">PORTAL DE TORNEO</div><h1>Registro y revisión justa.</h1><p class="muted">Esta página ayuda a organizar participantes y observaciones para revisión humana. No inspecciona el dispositivo ni determina automáticamente si alguien hizo trampa.</p></section>
+    <section class="hero"><div class="eyebrow">PORTAL DE TORNEO</div><h1>Registro y revisión justa.</h1><p class="muted">Los datos de registro se envían a la base de datos del torneo. La plataforma no inspecciona el dispositivo ni determina automáticamente si alguien hizo trampa.</p></section>
     <nav class="tabs" aria-label="Secciones"><button class="tab active" type="button" data-view="player">Participante</button><button class="tab" type="button" data-view="organizer">Organizador</button></nav>
     <section id="player" class="grid">
       <form class="card" id="entry-form"><h2>Registro de participante</h2><p class="muted">No ingreses contraseñas, cookies ni códigos de acceso.</p>
@@ -23,67 +23,163 @@
         <label for="tcode">CÓDIGO DEL TORNEO</label><input id="tcode" maxlength="32" autocomplete="off" required placeholder="Código entregado por la organización">
         <label for="launcher">APLICACIÓN / PLATAFORMA (DECLARACIÓN VOLUNTARIA)</label><select id="launcher"><option value="No indicado">Prefiero no indicarlo</option><option>Roblox Player (sitio web)</option><option>Aplicación de Roblox para Windows</option><option>Dispositivo móvil</option><option>Consola</option><option>Otra / no estoy seguro</option></select>
         <label for="note">OBSERVACIÓN PARA EL ORGANIZADOR (OPCIONAL)</label><textarea id="note" maxlength="300" placeholder="Contexto relacionado con la partida; evita incluir datos personales."></textarea>
-        <label class="consent"><input id="consent" type="checkbox" required><span>Entiendo que la plataforma indicada es una declaración voluntaria, no una detección. Las observaciones requieren revisión humana y no son prueba por sí solas.</span></label>
-        <button class="btn" type="submit">Añadir registro local</button><div id="form-status" class="status hidden" role="status" aria-live="polite"></div>
+        <label class="consent"><input id="consent" type="checkbox" required><span>Entiendo qué datos envío y que se almacenarán para la organización del torneo. La plataforma indicada es voluntaria, no una detección. Las observaciones requieren revisión humana.</span></label>
+        <button class="btn" id="submit-entry" type="submit">Enviar registro</button><div id="form-status" class="status hidden" role="status" aria-live="polite"></div>
       </form>
-      <aside class="card"><h2>Qué hace esta demo</h2>
-        <div class="status"><strong>Registro local</strong><br>Los registros viven solo en la memoria de esta página y se borran al recargarla. No se envían a un servidor.</div>
-        <div class="status"><strong>Revisión humana</strong><br>El organizador puede revisar notas y seguir el procedimiento acordado para el torneo. No hay expulsiones automáticas.</div>
-        <div class="notice"><strong>Límite técnico y de privacidad:</strong> una página web estática no puede determinar de forma fiable qué procesos o launcher están ejecutándose en el equipo. Esta demo no escanea procesos, archivos, memoria ni el sistema operativo.</div>
-        <p class="muted">La aplicación/plataforma se muestra únicamente porque el participante la declara; no se verifica de manera automática.</p>
+      <aside class="card"><h2>Privacidad y alcance</h2>
+        <div class="status"><strong>Datos guardados</strong><br>Usuario de Roblox, código de torneo, plataforma declarada, nota opcional y fecha de envío.</div>
+        <div class="status"><strong>Acceso restringido</strong><br>Solo organizadores autorizados podrán ver los registros. No envíes información sensible.</div>
+        <div class="notice"><strong>Límite técnico:</strong> la plataforma declarada no se verifica. Esta página no escanea procesos, archivos, memoria ni el sistema operativo; tampoco detecta trampas.</div>
+        <p class="muted">Los registros se almacenan en Supabase, el proveedor configurado por el propietario del sitio. Consulta con la organización para solicitar la eliminación de tus datos.</p>
       </aside>
     </section>
     <section id="organizer" class="hidden">
-      <div class="metrics"><div class="metric"><strong id="total">0</strong><small>REGISTROS EN ESTA PÁGINA</small></div><div class="metric"><strong>Manual</strong><small>TIPO DE REVISIÓN</small></div></div>
-      <div class="card"><h2>Registros de esta sesión</h2><p class="muted">Demostración local: no es un panel privado ni autenticado. No compartas información sensible aquí.</p>
-        <div class="table-wrap"><table><thead><tr><th>JUGADOR</th><th>TORNEO</th><th>APLICACIÓN DECLARADA</th><th>OBSERVACIÓN</th><th>ESTADO</th></tr></thead><tbody id="records"><tr><td class="empty" colspan="5">Todavía no hay registros.</td></tr></tbody></table></div>
-        <button class="btn secondary" id="clear" type="button">Borrar registros de esta página</button>
+      <div class="grid">
+        <form class="card" id="login-form"><h2>Acceso de organizador</h2><p class="muted">Usa la cuenta autorizada para este torneo.</p>
+          <label for="email">CORREO</label><input id="email" type="email" autocomplete="username" required>
+          <label for="password">CONTRASEÑA</label><input id="password" type="password" autocomplete="current-password" required>
+          <div class="row-actions"><button class="btn" id="login-button" type="submit">Iniciar sesión</button><button class="btn secondary hidden" id="logout-button" type="button">Cerrar sesión</button></div>
+          <div id="auth-status" class="status" role="status" aria-live="polite">El acceso se habilita después de configurar Supabase siguiendo las instrucciones del README.</div>
+        </form>
+        <div class="card"><h2>Registros almacenados</h2><p class="muted">Solo las cuentas autorizadas en la tabla de organizadores pueden consultarlos.</p>
+          <div class="metrics"><div class="metric"><strong id="total">—</strong><small>REGISTROS</small></div></div>
+          <button class="btn secondary hidden" id="refresh-button" type="button">Actualizar registros</button>
+          <div id="records-status" class="status">Inicia sesión como organizador para ver los registros.</div>
+        </div>
       </div>
-      <div class="notice">Una declaración o alerta no demuestra uso de trampas. Para organizar un torneo real, utiliza reglas claras, evidencias obtenidas con consentimiento y una revisión humana imparcial.</div>
+      <div class="card" style="margin-top:15px"><div class="table-wrap"><table><thead><tr><th>FECHA</th><th>JUGADOR</th><th>TORNEO</th><th>APLICACIÓN DECLARADA</th><th>OBSERVACIÓN</th></tr></thead><tbody id="records"><tr><td class="empty" colspan="5">Sin registros cargados.</td></tr></tbody></table></div></div>
+      <div class="notice">Una declaración o alerta no demuestra uso de trampas. Mantén acceso limitado, define cuánto tiempo conservarás los datos y elimina los que ya no necesites.</div>
     </section>
-    <footer>DAKOTA · Demo estática · Sin detector, escaneo del dispositivo, backend ni autenticación. <a href="./">Volver al portal</a></footer>
+    <footer>DAKOTA · Portal estático con almacenamiento Supabase · Sin detector ni escaneo del dispositivo.</footer>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
     'use strict';
-    const entries = [];
-    const tabs = [...document.querySelectorAll('.tab')];
-    tabs.forEach(button => button.addEventListener('click', () => {
-      tabs.forEach(tab => tab.classList.toggle('active', tab === button));
+    // Sustituye estos valores por Project URL y anon/public key de Supabase. Nunca uses la service_role key aquí.
+    const SUPABASE_URL = 'https://YOUR-PROJECT.supabase.co';
+    const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+    const configured = !SUPABASE_URL.includes('YOUR-PROJECT') && !SUPABASE_ANON_KEY.includes('YOUR_SUPABASE_ANON_KEY');
+    const supabase = configured && window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+    const status = (element, message, error = false) => {
+      element.textContent = message;
+      element.classList.toggle('error', error);
+      element.classList.remove('hidden');
+    };
+    const formStatus = document.getElementById('form-status');
+    const authStatus = document.getElementById('auth-status');
+    const recordsStatus = document.getElementById('records-status');
+    document.querySelectorAll('.tab').forEach(button => button.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.toggle('active', tab === button));
       document.getElementById('player').classList.toggle('hidden', button.dataset.view !== 'player');
       document.getElementById('organizer').classList.toggle('hidden', button.dataset.view !== 'organizer');
     }));
-    const form = document.getElementById('entry-form');
-    form.addEventListener('submit', event => {
+
+    document.getElementById('entry-form').addEventListener('submit', async event => {
       event.preventDefault();
+      if (!configured || !supabase) {
+        status(formStatus, 'El sitio aún no está conectado a Supabase. El administrador debe completar la configuración del README.', true);
+        return;
+      }
+      const button = document.getElementById('submit-entry');
+      button.disabled = true;
+      status(formStatus, 'Enviando registro…');
       const entry = {
         username: document.getElementById('username').value.trim(),
-        code: document.getElementById('tcode').value.trim(),
-        launcher: document.getElementById('launcher').value,
-        note: document.getElementById('note').value.trim()
+        tournament_code: document.getElementById('tcode').value.trim(),
+        declared_platform: document.getElementById('launcher').value,
+        note: document.getElementById('note').value.trim() || null,
+        consent: document.getElementById('consent').checked
       };
-      if (!entry.username || !entry.code || !document.getElementById('consent').checked) return;
-      entries.push(entry);
-      document.getElementById('form-status').textContent = 'Registro añadido solo a esta página. No se ha enviado a ningún servidor.';
-      document.getElementById('form-status').classList.remove('hidden');
-      document.getElementById('total').textContent = String(entries.length);
-      const body = document.getElementById('records');
-      body.replaceChildren();
-      entries.forEach(item => {
+      const { error } = await supabase.from('tournament_entries').insert(entry);
+      button.disabled = false;
+      if (error) {
+        status(formStatus, 'No se pudo guardar el registro. Verifica la configuración o inténtalo más tarde.', true);
+        console.error('Submission failed:', error.message);
+        return;
+      }
+      status(formStatus, 'Registro guardado. La organización podrá revisarlo manualmente.');
+      event.target.reset();
+    });
+
+    async function loadEntries() {
+      status(recordsStatus, 'Cargando registros…');
+      const { data, error } = await supabase.from('tournament_entries')
+        .select('created_at, username, tournament_code, declared_platform, note')
+        .order('created_at', { ascending: false }).limit(500);
+      if (error) {
+        status(recordsStatus, 'No se pudieron cargar los registros. Comprueba que esta cuenta esté autorizada como organizador.', true);
+        console.error('Loading entries failed:', error.message);
+        return;
+      }
+      const tbody = document.getElementById('records');
+      tbody.replaceChildren();
+      document.getElementById('total').textContent = String(data.length);
+      if (!data.length) {
         const row = document.createElement('tr');
-        [item.username, item.code, item.launcher, item.note || '—', 'Pendiente de revisión humana'].forEach(value => {
-          const cell = document.createElement('td');
-          cell.textContent = value;
-          row.appendChild(cell);
+        const cell = document.createElement('td');
+        cell.colSpan = 5; cell.className = 'empty'; cell.textContent = 'Todavía no hay registros.';
+        row.appendChild(cell); tbody.appendChild(row);
+      } else {
+        data.forEach(item => {
+          const row = document.createElement('tr');
+          const values = [new Date(item.created_at).toLocaleString('es'), item.username, item.tournament_code, item.declared_platform, item.note || '—'];
+          values.forEach(value => { const cell = document.createElement('td'); cell.textContent = value; row.appendChild(cell); });
+          tbody.appendChild(row);
         });
-        body.appendChild(row);
+      }
+      status(recordsStatus, `Se muestran ${data.length} registro(s), como máximo los 500 más recientes.`);
+    }
+
+    function setSignedIn(signedIn) {
+      document.getElementById('login-button').classList.toggle('hidden', signedIn);
+      document.getElementById('logout-button').classList.toggle('hidden', !signedIn);
+      document.getElementById('refresh-button').classList.toggle('hidden', !signedIn);
+      document.getElementById('email').disabled = signedIn;
+      document.getElementById('password').disabled = signedIn;
+    }
+
+    document.getElementById('login-form').addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!supabase) { status(authStatus, 'Configura primero las credenciales públicas de Supabase en este archivo.', true); return; }
+      const button = document.getElementById('login-button'); button.disabled = true;
+      const { error } = await supabase.auth.signInWithPassword({
+        email: document.getElementById('email').value.trim(),
+        password: document.getElementById('password').value
       });
-      form.reset();
+      button.disabled = false;
+      if (error) { status(authStatus, 'No se pudo iniciar sesión. Revisa las credenciales y que la cuenta esté autorizada.', true); return; }
+      document.getElementById('password').value = '';
+      await updateSession();
     });
-    document.getElementById('clear').addEventListener('click', () => {
-      entries.length = 0;
-      document.getElementById('total').textContent = '0';
-      document.getElementById('records').innerHTML = '<tr><td class="empty" colspan="5">Todavía no hay registros.</td></tr>';
+
+    async function updateSession() {
+      if (!supabase) return;
+      const { data: { session } } = await supabase.auth.getSession();
+      setSignedIn(Boolean(session));
+      if (session) {
+        status(authStatus, 'Sesión iniciada. Si no estás autorizado como organizador, la base de datos denegará el acceso.');
+        await loadEntries();
+      } else {
+        status(authStatus, 'Inicia sesión con una cuenta autorizada para este torneo.');
+        document.getElementById('total').textContent = '—';
+        document.getElementById('records').innerHTML = '<tr><td class="empty" colspan="5">Inicia sesión para ver los registros.</td></tr>';
+        status(recordsStatus, 'Inicia sesión como organizador para ver los registros.');
+      }
+    }
+    document.getElementById('logout-button').addEventListener('click', async () => {
+      const { error } = await supabase.auth.signOut();
+      if (error) status(authStatus, 'No se pudo cerrar sesión.', true);
+      await updateSession();
     });
+    document.getElementById('refresh-button').addEventListener('click', loadEntries);
+    if (!configured) {
+      status(formStatus, 'La base de datos aún no está configurada. Sigue las instrucciones de README.md para conectar Supabase.', true);
+    } else if (!supabase) {
+      status(formStatus, 'No se pudo cargar el cliente de Supabase. Comprueba tu conexión y recarga.', true);
+    } else {
+      updateSession();
+      supabase.auth.onAuthStateChange(() => { setTimeout(updateSession, 0); });
+    }
   </script>
 </body>
 </html>
